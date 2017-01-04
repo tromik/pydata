@@ -26,7 +26,7 @@ for engagement_record in daily_engagement:
     engagement_record['account_key'] = engagement_record['acct']
     del(engagement_record['acct'])
 
-udacity_test_accounts = ()
+udacity_test_accounts = set()
 for enrollment in enrollments:
     if enrollment['is_udacity']:
         udacity_test_accounts.add(enrollment['account_key'])
